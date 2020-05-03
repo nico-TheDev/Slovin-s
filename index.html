@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="calc">
+
+        <div class="calc__field">
+            <label for="population" class="calc__label">Total Population (N)</label>
+            <input type="number" id="population" class="calc__input" placeholder="Enter total population..">
+        </div>
+        <div class="calc__field">
+            <label for="errors" class="calc__label">Margin of Error (e)</label>
+            <input type="number" id="errors" class="calc__input" placeholder="decimal value..">
+        </div>
+        <button id="calculate">Get</button>
+        <p class="result">Sample Size: <span class="answer">0</span></p>
+    </div>
+</body>
+</html>

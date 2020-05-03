@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calc{
+    background-color: gray;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 1rem rgba(black,0.4);
+    color: white;
+    display: grid;
+    grid-row-gap: 0.5rem;
+
+    &__label{
+        display: block;
+        font-size: 1.1rem;
+    }
+
+    &__input{
+        width: 100%;
+        font-size: inherit;
+        padding: 0.3rem;
+    }
+
+}
+
+#calculate{
+    display: block;
+    width: 100%;
+    font-size: inherit;
+    padding: 0.3rem;
+    cursor: pointer;
+    border: none;
+    &:hover{
+        background-color: white;
+    }
+}
+
+.answer{
+    color: lime;
+}
